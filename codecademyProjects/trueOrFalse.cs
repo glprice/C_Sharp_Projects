@@ -61,7 +61,7 @@ class TrueOrFalse
       while(isBool == false)
       {
         Console.WriteLine($"{question}");
-        input = Console.ReadLine().ToLower();
+        input = (Console.ReadLine() ?? "").ToLower();
         
         if (input == "true" || input == "false")
         {

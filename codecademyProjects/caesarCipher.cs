@@ -8,7 +8,7 @@ class CaesarCipher
       
     Console.WriteLine("Insert Message (lowercase only)");
 
-    string msgString =Console.ReadLine();
+    string msgString =Console.ReadLine() ?? "";
     char[] secretMessage = msgString.ToCharArray();
 
     char[] encryptedMessage = new char[secretMessage.Length];
